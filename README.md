@@ -33,7 +33,7 @@ Este proyecto evalúa si la optimización media-varianza de Markowitz genera por
 
 ## Resultados
 
-### Desempeño fuera de muestra (enero 2022 – octubre 2026, con costos)
+### Desempeño fuera de muestra (enero 2021 – octubre 2026, con costos)
 
 | Portafolio | Sharpe dentro de muestra | Sharpe walk-forward | Valor final de $1 | CAGR | Máx. drawdown |
 |---|---|---|---|---|---|
