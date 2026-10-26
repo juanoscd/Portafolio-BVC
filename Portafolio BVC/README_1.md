@@ -46,7 +46,7 @@ Este proyecto evalúa si la optimización media-varianza de Markowitz genera por
   <img src="figuras/walk_forward.png" width="850" alt="Walk-forward">
 </p>
 
-El Máximo Sharpe domina dentro de muestra: supera a 20,000 portafolios aleatorios y es el mejor con cualquier tasa libre de riesgo entre 6% y 15%. Sin embargo, su Sharpe cae 65% en la validación fuera de muestra. La causa es el **error de estimación**: el optimizador trata el retorno histórico como si fuera conocido y concentra el capital en los activos con mejor desempeño pasado. El Sharpe Restringido limita esa concentración y obtiene el mejor resultado fuera de muestra, con menor rotación (14.6% mensual frente a 26.5%).
+El Máximo Sharpe es el mejor dentro de la muestra: supera a 20,000 portafolios aleatorios y es el mejor con cualquier tasa libre de riesgo entre 6% y 15%. Sin embargo, su Sharpe cae 65% en la validación fuera de muestra wf. La causa es el **error de estimación**: el optimizador trata el retorno histórico como si fuera conocido y concentra el capital en los activos con mejor desempeño pasado. El Sharpe Restringido limita esa concentración y obtiene el mejor resultado fuera de muestra, con menor rotación (14.6% mensual frente a 26.5%).
 
 ### Composición y concentración del riesgo
 
@@ -54,7 +54,7 @@ El Máximo Sharpe domina dentro de muestra: supera a 20,000 portafolios aleatori
   <img src="figuras/pesos.png" width="850" alt="Pesos">
 </p>
 
-El Máximo Sharpe asigna capital a 7 de los 20 activos. NUTRESA, TERPEL y CIBEST explican el 88% de su varianza. NUTRESA, por sí sola, aporta el 60% del riesgo con el 32% del capital.
+El Máximo Sharpe asigna capital a 7 de los 20 acciones. NUTRESA, TERPEL y CIBEST explican el 88% de su varianza. NUTRESA, por sí sola, aporta el 60% del riesgo con el 32% del capital.
 
 <p align="center">
   <img src="figuras/contribucion_riesgo.png" width="850" alt="Contribución al riesgo">
@@ -74,7 +74,7 @@ Los retornos presentan una curtosis en exceso entre 8 y 49. La estimación por m
   <img src="figuras/var_cvar.png" width="850" alt="VaR y CVaR">
 </p>
 
-En el backtesting, el Monte Carlo t-Student pasa la prueba de Kupiec en los 8 casos evaluados (4 portafolios × 2 niveles de confianza). Los modelos normales la fallan en 3 casos, porque subestiman la frecuencia de pérdidas extremas. En 2 casos se rechaza la independencia de Christoffersen: las pérdidas tienden a agruparse, lo cual sugiere incorporar volatilidad condicional.
+En el backtesting, el Monte Carlo t-Student pasa la prueba de Kupiec en los 8 casos evaluados (4 portafolios × 2 niveles de confianza). Los modelos normales la fallan en 3 casos, porque subestiman la frecuencia de pérdidas extremas. En 2 casos se rechaza la independencia de Christoffersen: las pérdidas tienden a agruparse, lo cual sugiere incorporar volatilidad condicional, se sugiere implementar GARCH.
 
 <p align="center">
   <img src="figuras/backtest_var.png" width="850" alt="Backtesting del VaR">
@@ -114,9 +114,8 @@ pip install -r requirements.txt
 jupyter notebook portafolio_bvc.ipynb
 ```
 
-Las gráficas del notebook son interactivas (Plotly). Para verlas sin ejecutar el código: [nbviewer](https://nbviewer.org/github/TU_USUARIO/portafolio-bvc/blob/main/portafolio_bvc.ipynb).
 
-## Limitaciones y trabajo futuro
+## Limitaciones y consideraciones
 
 - **Sesgo de supervivencia:** solo se incluyen acciones listadas actualmente.
 - **Supuestos fijos:** la tasa libre de riesgo y el costo de transacción son constantes.
@@ -126,11 +125,10 @@ Las gráficas del notebook son interactivas (Plotly). Para verlas sin ejecutar e
 
 ## Referencias
 
-- PON AQUÍ los libros de tu profesor (autor, año, título).
 - Markowitz, H. (1952). Portfolio Selection. *The Journal of Finance*, 7(1), 77–91.
 - Kupiec, P. (1995). Techniques for verifying the accuracy of risk measurement models. *The Journal of Derivatives*, 3(2), 73–84.
 - Christoffersen, P. (1998). Evaluating interval forecasts. *International Economic Review*, 39(4), 841–862.
 
 ---
 
-*Proyecto con fines académicos. No constituye una recomendación de inversión.*
+*Proyecto con fines educativos*
