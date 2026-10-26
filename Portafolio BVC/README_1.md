@@ -2,7 +2,7 @@
 
 **Markowitz, medición de riesgo con Monte Carlo t-Student y validación walk-forward con costos de transacción**
 
-Juan Camilo Ospina Cardona · Ingeniero Financiero · [LinkedIn](www.linkedin.com/in/juan-camilo-ospina-cardona-1b2147370)
+Juan Camilo Ospina Cardona · Ingeniero Financiero 
 
 <p align="center">
   <img src="figuras/frontera_eficiente.png" width="850" alt="Frontera eficiente">
