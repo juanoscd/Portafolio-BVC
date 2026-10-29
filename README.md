@@ -12,7 +12,7 @@ Juan Camilo Ospina Cardona · Ingeniero Financiero
 
 ## Resumen
 
-Este proyecto evalúa si la optimización media-varianza de Markowitz genera portafolios superiores en el mercado accionario colombiano una vez se controla por el sesgo de información futura (*look-ahead bias*) y por los costos de transacción. Se analizan 30 acciones de la BVC entre enero de 2021 y octubre de 2026. Tras aplicar un filtro de liquidez, quedan 20 acciones, con los cuales se construyen cuatro portafolios.
+Este proyecto evalúa si la optimización media-varianza de Markowitz genera portafolios superiores en el mercado accionario colombiano una vez se controla por el sesgo de información futura (*look-ahead bias*) y por los costos de transacción. Se analizan 30 acciones de la BVC entre enero de 2022 y octubre de 2026. Tras aplicar un filtro de liquidez, quedan 20 acciones, con los cuales se construyen cuatro portafolios.
 
 | Portafolio | Criterio |
 |---|---|
@@ -33,7 +33,7 @@ Este proyecto evalúa si la optimización media-varianza de Markowitz genera por
 
 ## Resultados
 
-### Desempeño fuera de muestra (enero 2021 – octubre 2026, con costos)
+### Desempeño fuera de muestra (enero 2022 – octubre 2026, con costos)
 
 | Portafolio | Sharpe dentro de muestra | Sharpe walk-forward | Valor final de $1 | CAGR | Máx. drawdown |
 |---|---|---|---|---|---|
