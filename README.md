@@ -62,7 +62,7 @@ El Máximo Sharpe asigna capital a 7 de los 20 acciones. NUTRESA, TERPEL y CIBES
 
 ### VaR y CVaR
 
-Los retornos presentan una curtosis en exceso entre 8 y 49. La estimación por máxima verosimilitud selecciona una t-Student con **3 grados de libertad**, lo que confirma colas pesadas. Por esta razón, las conclusiones de riesgo se basan en el Monte Carlo t-Student (100,000 simulaciones).
+Los retornos presentan una curtosis en exceso entre 8 y 49. La estimación por máxima verosimilitud selecciona una t-Student con **3 grados de libertad**, lo que confirma colas pesadas. Por esta razón, las conclusiones de riesgo se basan en el Monte Carlo t-Student (20,000 simulaciones).
 
 | Portafolio (capital: COP 100 millones) | VaR 99% | CVaR 99% |
 |---|---|---|
